@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 30px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(179, 224, 236);
+  }
+p{
+    text-align: left;
+    padding: 10px;
+    margin-top: 0px;
+  }
+  
+.links {
+    padding: 5px;
+    line-height: 14px;
+  }
+
+h1,h2,h3 {
+  font-family: 'Rubik', sans-serif;
+  }
+h1{
+    font-size: 22px;
+  }
+h2 {
+    text-decoration: underline;
+    font-size: 20px;
+  }
+h3 {
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+.profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+.quizPic {
+    width:200px;
+    height: 200px;
+  }
+.icon {
+    width: 30px;
+    height:30px;
+ }
+.info {
+   width: 60px;
+   height: 60px;
+   display: inline-flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 8px;
+ }
+nav,
+footer {
+    padding: 1% 0;
+    background-color: #aaa;
+    
+  }
+  
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+    background-color: #6FA1B3;
+    border: 2px solid #FDFACA;
+  }
+  
+nav li {
+    display: none;
+  }
+.hamburger {
+  color: #FDFACA;
+  align-items: right;
+  text-align: end;
+  padding: 20px;
+  font-size: 30px;
+  }
+  
+header {
+  padding: 12% 0;
+  }
+  
+section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #79B5C9;
+    border: 2px solid #FDFACA;
+  }
+  
+section:nth-child(even) {
+    background-color:  #FCB1C4;
+  }
+
+  footer {
+    background-color: #B85B73;
+    border: 2px solid #FDFACA;
+  }
+
+@media screen and (min-width: 750px){
+
+  nav li {
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 15px; 
+    }
+    .hamburger {
+      display: none;
+    }
+    .quizPic {
+      width: 400px;
+      height: 300px;
+    }
+    .profile{
+      width: 400px;
+      height: 500px;
+    }
+    nav{
+      font-size: 25px;
+    }
+  }
+  @media screen and (min-width: 800px){
+
+    .quizPic {
+      width: 550px;
+      height: 300px;
+    }
+    body {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    h2{
+      font-size: 35px;
+    }
+    h3{
+      font-size: 32px;
+    }
+    nav{
+      font-size: 32px;
+    }
+    .icon {
+      width: 50px;
+      height:50px;
+    }
+    .info {
+      width: 70px;
+      height:70px;
+    }
+  }
